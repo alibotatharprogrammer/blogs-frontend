@@ -6,8 +6,8 @@ const Home = () => {
 
   const handleLogout = () => {
     
-    localStorage.removeItem('token'); 
-    navigate("/login"); 
+    localStorage.removeItem('blogdata'); 
+    navigate(-1);
   }
 
   return (
