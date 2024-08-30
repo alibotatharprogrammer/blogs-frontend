@@ -34,7 +34,7 @@ const Login = () => {
         console.log(response);
         const data=response.data;
 
-        window.localStorage.setItem("blogdata",JSON.stringify(data.data))
+        window.localStorage.setItem("blogdata",JSON.stringify(data))
         setformdata(initialFormData);
         setformerror(initialErrorForm);
         navigate("/home")
